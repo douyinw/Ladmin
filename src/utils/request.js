@@ -7,9 +7,7 @@ const TOKEN_INVALID = 'Token认证失败,请重新登录';
 const NETWORK_ERROR = '网络请求异常,请稍后重试';
 
 // 生产环境直接使用完整URL
-const BASE_URL = import.meta.env.PROD
-    ? import.meta.env.VITE_API_BASE_URL 
-    : '/api';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const service = axios.create({ baseURL: BASE_URL, timeout: 5000 })
 
 service.interceptors.request.use((req) => {
