@@ -11,9 +11,9 @@ export default defineConfig(({ command, mode }) => {
     plugins: [vue()],
     server: {
       open: true,
-      port: 88,
-      strictPort: true,
-      host: '0.0.0.0',
+      // port: 88,
+      // strictPort: true,
+      // host: '0.0.0.0',
       proxy: {
         '/api': {
           target: env.VITE_API_BASE_URL,
