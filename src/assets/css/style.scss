@@ -1,0 +1,245 @@
+/* 自定义菜单样式 */
+[mine-skin=skin_a],
+[mine-skin=skin_b],
+[mine-skin=skin_c],
+[mine-skin=skin_d],
+[mine-skin=skin_e],
+[mine-skin=skin_f] {
+    --primary-a: #fff0;
+    --primary-b: #fff3;
+    --primary-c: #fff;
+}
+
+[mine-skin=concise] {
+    --primary-a: rgb(var(--primary-1));
+    --primary-b: rgb(var(--primary-2), .6);
+    --primary-c: rgb(var(--primary-10));
+}
+
+[mine-skin=classics] {
+    --primary-a: #fff0;
+    --primary-b: rgb(var(--primary-6), .6);
+    --primary-c: #fff;
+}
+
+[mine-skin=classics],
+[mine-skin=skin_a],
+[mine-skin=skin_b],
+[mine-skin=skin_c],
+[mine-skin=skin_d],
+[mine-skin=skin_e],
+[mine-skin=skin_f] {
+    .arco-menu-light {
+        border: 0;
+        background: none;
+        background-color: var(--primary-a);
+
+        .arco-menu-item {
+            background-color: var(--primary-a);
+            color: var(--primary-c);
+
+            * {
+                color: var(--primary-c);
+            }
+
+            &:hover,
+            &.arco-menu-selected {
+                background-color: var(--primary-b);
+                color: var(--primary-c);
+            }
+        }
+
+        .arco-menu-inline-header {
+            background-color: var(--primary-a);
+            color: var(--primary-c);
+
+            &.arco-menu-selected,* {
+                color: var(--primary-c);
+            }
+
+            &:hover,
+            &.arco-menu-selected:hover {
+                background-color: var(--primary-b);
+                color: var(--primary-c);
+            }
+        }
+        
+        .arco-menu-pop-header {
+            background-color: var(--primary-a);
+            color: var(--primary-c);
+
+            * {
+                color: var(--primary-c);
+            }
+
+            &:hover,
+            &.arco-menu-selected {
+                background-color: var(--primary-b);
+                color: var(--primary-c);
+            }
+        }
+
+        .arco-menu-collapse-button {
+            background-color: var(--primary-b);
+            color: var(--primary-c);
+
+            &:hover {
+                background-color: rgb(var(--primary-3));
+                color: rgb(var(--primary-6));
+            }
+        }
+    }
+}
+
+/*
+[mine-skin=default] {
+    .arco-menu-light {
+
+        .arco-menu-inline-header,
+        .arco-menu-item {
+
+            .arco-icon {
+                color: var(--color-text-1);
+            }
+
+            &:hover {
+                .arco-icon {
+                    color: var(--color-text-1);
+                }
+            }
+
+            &.arco-menu-selected {
+                color: rgb(var(--primary-6));
+
+                .arco-icon {
+                    color: var(--color-text-6);
+                }
+
+                &:hover {
+                    .arco-icon {
+                        color: var(--color-text-6);
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+
+[arco-theme=light] {
+    .login-container {
+        color: var(--color-text-2);
+        background: rgb(145 185 233 / 50%);
+    }
+}
+
+[arco-theme=dark] {
+    .login-container {
+        color: var(--color-text-2);
+        background: var(--color-neutral-2);
+    }
+}
+
+[mine-skin=skin_a] {
+
+    .layout-demo,
+    .login-container {
+        background: linear-gradient(128deg, #305BD2 0%, #B8C2E0 72.12%);
+
+        .login-logo span {
+            color: #0005;
+        }
+    }
+}
+
+[mine-skin=skin_b] {
+
+    .layout-demo,
+    .login-container {
+        background: linear-gradient(128deg, #687D56 0%, #B2C89E 72.12%);
+
+        .login-logo span {
+            color: #0005;
+        }
+    }
+}
+
+[mine-skin=skin_c] {
+
+    .layout-demo,
+    .login-container {
+        background: linear-gradient(128deg, #40BDA5 0%, #40BF97 36.06%, #40BF6C 72.12%);
+
+        .login-logo span {
+            color: #0005;
+        }
+    }
+}
+
+[mine-skin=skin_d] {
+
+    .layout-demo,
+    .login-container {
+        background: linear-gradient(128deg, #EB8499 0%, #EB8984 36.06%, #EBA384 72.12%);
+
+        .login-logo span {
+            color: #0005;
+        }
+    }
+}
+
+[mine-skin=skin_e] {
+
+    .layout-demo,
+    .login-container {
+        background: linear-gradient(128deg, #3D455C 0%, #858FAD 72.12%);
+
+        .login-logo span {
+            color: #0005;
+        }
+    }
+}
+
+[mine-skin=skin_f] {
+
+    .layout-demo,
+    .login-container {
+        background: linear-gradient(128deg, #5A3F54 0%, #A58D9D 72.12%);
+
+        .login-logo span {
+            color: #0005;
+        }
+    }
+}
+
+
+//富文本视频样式
+.w-e-textarea-video-container {
+    padding: 6px 6px 0;
+
+    video {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+    }
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(var(--gray-4));
+    border-radius: 10px;
+
+    &:hover {
+        background: rgb(var(--gray-6));
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(var(--gray-1));
+    border-radius: 10px;
+}
